@@ -68,6 +68,11 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('tour-search-form').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent form submission
 
+        const loadingSpinner = document.getElementById('loading-spinner');
+
+        // Show the loading spinner
+        loadingSpinner.style.display = 'flex';
+
         // Collect form data
         const formData = {
             name: document.getElementById('name').value,
@@ -94,6 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
             .then(result => {
                 console.log('Success:', result);
+                loadingSpinner.style.display = 'none';
                 // Show SweetAlert success message
                 Swal.fire({
                     icon: 'success',
@@ -107,19 +113,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Optionally, reset the form after submission
                 document.getElementById('tour-search-form').reset();
 
-                // Show SweetAlert success message
-                Swal.fire({
-                    icon: 'success',
-                    title: 'Form Submitted Successfully!',
-                    text: 'Thank you for your inquiry.',
-                    timer: 3000,
-                    timerProgressBar: true,
-                    showConfirmButton: false
-                });
             })
 
             .catch(error => {
                 console.error('Error:', error);
+                loadingSpinner.style.display = 'none';
                 Swal.fire({
                     icon: 'error',
                     title: 'Submission Failed!',

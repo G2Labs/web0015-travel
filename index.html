@@ -25,6 +25,7 @@
     <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
             rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 
 <body id="top">
@@ -142,7 +143,7 @@
 
             </nav>
 
-            <button class="btn btn-primary">Book Now</button>
+<!--            <button class="btn btn-primary">Book Now</button>-->
 
         </div>
     </div>
@@ -162,82 +163,46 @@
                 <source src="./assets/video/hero-video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <div class="container">
-                <h2 class="h1 hero-title">Journey to explore world</h2>
+            <div class="content container">
+                <h2 class="h1 hero-title">Visit Sri Lanka</h2>
                 <p class="hero-text">
-                    Ac mi duis mollis. Sapiente? Scelerisque quae, penatibus? Suscipit class corporis nostra rem quos
-                    voluptatibus habitant?
-                    Fames, vivamus minim nemo enim, gravida lobortis quasi, eum.
+                    Sri Lanka is an island nation located in the Indian Ocean, just off the southeastern coast of India.
+                    It is known for its beautiful beaches, ancient temples and palaces, and stunning natural landscapes,
+                    including forests, mountains, and wildlife reserves.
                 </p>
                 <div class="btn-group">
-                    <button class="btn btn-primary">Learn more</button>
-                    <button class="btn btn-secondary">Book now</button>
+                    <a class="btn btn-primary" href="#contact" >Learn more</a>
+                    <a class="btn btn-secondary" href="#contact" >Book now</a>
+<!--                    <button class="btn btn-primary" href="#contact">Learn more</button>-->
+<!--                    <button class="btn btn-secondary" href="#contact">Book now</button>-->
                 </div>
             </div>
         </section>
 
 
-        <!--      <section class="hero" id="home">-->
-        <!--        <div class="container">-->
+        <!--              <section class="hero" id="home">-->
+        <!--                  -->
+        <!--                <div class="container">-->
 
-        <!--          <h2 class="h1 hero-title">Journey to explore world</h2>-->
+        <!--                  <h2 class="h1 hero-title">Journey to explore world</h2>-->
 
-        <!--          <p class="hero-text">-->
-        <!--            Ac mi duis mollis. Sapiente? Scelerisque quae, penatibus? Suscipit class corporis nostra rem quos-->
-        <!--            voluptatibus habitant?-->
-        <!--            Fames, vivamus minim nemo enim, gravida lobortis quasi, eum.-->
-        <!--          </p>-->
+        <!--                  <p class="hero-text">-->
+        <!--                    Ac mi duis mollis. Sapiente? Scelerisque quae, penatibus? Suscipit class corporis nostra rem quos-->
+        <!--                    voluptatibus habitant?-->
+        <!--                    Fames, vivamus minim nemo enim, gravida lobortis quasi, eum.-->
+        <!--                  </p>-->
 
-        <!--          <div class="btn-group">-->
-        <!--            <button class="btn btn-primary">Learn more</button>-->
+        <!--                  <div class="btn-group">-->
+        <!--                    <button class="btn btn-primary">Learn more</button>-->
 
-        <!--            <button class="btn btn-secondary">Book now</button>-->
-        <!--          </div>-->
+        <!--                    <button class="btn btn-secondary">Book now</button>-->
+        <!--                  </div>-->
 
-        <!--        </div>-->
-        <!--      </section>-->
+        <!--                </div>-->
+        <!--              </section>-->
 
 
-        <!--
-          - #TOUR SEARCH
-        -->
 
-        <!--      <section class="tour-search">-->
-        <!--        <div class="container">-->
-
-        <!--          <form action="" class="tour-search-form">-->
-
-        <!--            <div class="input-wrapper">-->
-        <!--              <label for="destination" class="input-label">Search Destination*</label>-->
-
-        <!--              <input type="text" name="destination" id="destination" required placeholder="Enter Destination"-->
-        <!--                class="input-field">-->
-        <!--            </div>-->
-
-        <!--            <div class="input-wrapper">-->
-        <!--              <label for="people" class="input-label">Pax Number*</label>-->
-
-        <!--              <input type="number" name="people" id="people" required placeholder="No.of People" class="input-field">-->
-        <!--            </div>-->
-
-        <!--            <div class="input-wrapper">-->
-        <!--              <label for="checkin" class="input-label">Checkin Date**</label>-->
-
-        <!--              <input type="date" name="checkin" id="checkin" required class="input-field">-->
-        <!--            </div>-->
-
-        <!--            <div class="input-wrapper">-->
-        <!--              <label for="checkout" class="input-label">Checkout Date*</label>-->
-
-        <!--              <input type="date" name="checkout" id="checkout" required class="input-field">-->
-        <!--            </div>-->
-
-        <!--            <button type="submit" class="btn btn-secondary">Inquire now</button>-->
-
-        <!--          </form>-->
-
-        <!--        </div>-->
-        <!--      </section>-->
 
 
         <!--
@@ -716,10 +681,58 @@
                     </p>
                 </div>
 
-                <button class="btn btn-secondary">Contact Us !</button>
+<!--                <button class="btn btn-secondary">Contact Us !</button>-->
+
+            </div>
+            <div  style="padding: 0 10%">
+
+
+                <form action="" class="tour-search-form" id="tour-search-form">
+                    <div class="input-wrapper">
+                        <label for="name" class="input-label">Name*</label>
+                        <input type="text" name="name" id="name" required placeholder="Enter Name" class="input-field">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="email" class="input-label">Email*</label>
+                        <input type="email" name="email" id="email" required placeholder="Enter Email" class="input-field">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="destination" class="input-label">Destination*</label>
+                        <input type="text" name="place" id="place" required placeholder="Enter Destination" class="input-field">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="people" class="input-label">Pax Number*</label>
+                        <input type="number" name="people" id="people" required placeholder="No. of People" class="input-field">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="checkin" class="input-label">Check-in Date*</label>
+                        <input type="date" name="checkin" id="checkin" required class="input-field">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="checkout" class="input-label">Check-out Date*</label>
+                        <input type="date" name="checkout" id="checkout" required class="input-field">
+                    </div>
+
+                    <div class="button-row">
+                        <button type="submit" class="btn btn-secondary">Inquire now</button>
+                    </div>
+                </form>
 
             </div>
         </section>
+
+        <!--
+          - #TOUR SEARCH
+        -->
+
+<!--              <section class="tour-search">-->
+<!--                -->
+<!--              </section>-->
 
     </article>
 </main>

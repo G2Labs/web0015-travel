@@ -97,3 +97,49 @@ document.addEventListener('DOMContentLoaded', function() {
       })
       .catch(error => console.error('Error fetching destinations:', error));
 });
+
+
+//Validate calendar date
+// Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Get today's date in YYYY-MM-DD format
+    var today = new Date().toISOString().split('T')[0];
+
+    // Set min attribute for checkin and checkout inputs
+    document.getElementById('checkin').setAttribute('min', today);
+    document.getElementById('checkout').setAttribute('min', today);
+});
+
+
+//Contact us function
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('tour-search-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Collect form data
+        const formData = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            place: document.getElementById('place').value,
+            people: document.getElementById('people').value,
+            checkin: document.getElementById('checkin').value,
+            checkout: document.getElementById('checkout').value
+        };
+
+        // Log form data to console
+        console.log(formData);
+
+        // Show SweetAlert success message
+        Swal.fire({
+            icon: 'success',
+            title: 'Form Submitted Successfully!',
+            text: 'Thank you for your inquiry.',
+            timer: 3000,
+            timerProgressBar: true,
+            showConfirmButton: false
+        });
+
+        // Optionally, reset the form after submission
+        document.getElementById('tour-search-form').reset();
+    });
+});

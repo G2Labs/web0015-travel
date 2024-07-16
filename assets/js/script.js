@@ -81,6 +81,46 @@ document.addEventListener('DOMContentLoaded', function() {
         // Log form data to console
         console.log(formData);
 
+        // Send form data to Google Apps Script
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyWl_9730ggWkdjqdqpnalnVREYdskFyStUZlTeJ55BdONpdisqEhvpqUhmn3nSaLg2/exec'; // Replace with your Google Apps Script URL
+
+        fetch(scriptURL, {
+            method: 'POST',
+            body: JSON.stringify(formData),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+            .then(response => response.json())
+            .then(result => {
+                console.log('Success:', result);
+                // Show SweetAlert success message
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Form Submitted Successfully!',
+                    text: 'Thank you for your inquiry.',
+                    timer: 3000,
+                    timerProgressBar: true,
+                    showConfirmButton: false
+                });
+
+                // Optionally, reset the form after submission
+                document.getElementById('tour-search-form').reset();
+            })
+
+            .catch(error => {
+                console.error('Error:', error);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Submission Failed!',
+                    text: 'There was an error submitting the form. Please try again later.',
+                    timer: 3000,
+                    timerProgressBar: true,
+                    showConfirmButton: false
+                });
+            });
+
+
         // Show SweetAlert success message
         Swal.fire({
             icon: 'success',

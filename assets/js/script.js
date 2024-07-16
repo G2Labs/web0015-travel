@@ -86,13 +86,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         fetch(scriptURL, {
             method: 'POST',
+            mode: 'no-cors',
             body: JSON.stringify(formData),
             headers: {
                 'Content-Type': 'application/json'
             },
-            redirect: "follow"
         })
-            .then(response => response.json())
             .then(result => {
                 console.log('Success:', result);
                 // Show SweetAlert success message

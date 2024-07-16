@@ -104,7 +104,7 @@
                 <div class="navbar-top">
 
                     <a href="#" class="logo">
-                        <img src="./assets/images/logo-blue.svg" alt="Tourly logo">
+                        <img src="./assets/images/logo-sub.jpg" alt="Gangawata  logo">
                     </a>
 
                     <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
@@ -126,7 +126,9 @@
                     <li>
                         <a href="#destination" class="navbar-link" data-nav-link>destination</a>
                     </li>
-
+                    <li>
+                        <a href="#vehicles" class="navbar-link" data-nav-link>vehicles</a>
+                    </li>
                     <li>
                         <a href="#package" class="navbar-link" data-nav-link>packages</a>
                     </li>
@@ -171,7 +173,7 @@
                     including forests, mountains, and wildlife reserves.
                 </p>
                 <div class="btn-group">
-                    <a class="btn btn-primary" href="#contact" >Learn more</a>
+                    <a class="btn btn-primary" href="#destination" >Learn more</a>
                     <a class="btn btn-secondary" href="#contact" >Book now</a>
 <!--                    <button class="btn btn-primary" href="#contact">Learn more</button>-->
 <!--                    <button class="btn btn-secondary" href="#contact">Book now</button>-->
@@ -223,132 +225,32 @@
                     <!-- Cards will be dynamically loaded here -->
                 </ul>
 
-                <button class="btn btn-primary">More destinations</button>
+                <button class="btn btn-primary" onclick="scrollToContact()">More destinations</button>
 
             </div>
         </section>
 
-        <!--      <section class="popular" id="destination">-->
-        <!--        <div class="container">-->
+        <!--
+          - #Vehicles
+        -->
+        <section class="popular" id="vehicles">
+            <div class="container">
 
-        <!--          <p class="section-subtitle">Uncover place</p>-->
+                <p class="section-subtitle">Available Vehicles</p>
 
-        <!--          <h2 class="h2 section-title">Popular destination</h2>-->
+                <h2 class="h2 section-title">Choose Your Ride</h2>
 
-        <!--          <p class="section-text">-->
-        <!--            Plan Your Travel Itinerary With Our List Of The Best Places To Visit In Sri Lanka.-->
-        <!--          </p>-->
+                <p class="section-text">
+                    Explore our fleet of vehicles to find the perfect ride for your journey. Whether you're traveling solo, with family, or in a group, we have a range of options to suit your needs and preferences.
+                </p>
 
-        <!--          <ul class="popular-list">-->
+                <ul class="popular-list" id="vehicles-list">
+                    <!-- Cards will be dynamically loaded here -->
+                </ul>
 
-        <!--            <li>-->
-        <!--              <div class="popular-card">-->
+            </div>
+        </section>
 
-        <!--                <figure class="card-img">-->
-        <!--                  <img src="./assets/images/lotustower.jpg" alt="Lotus tower" loading="lazy">-->
-        <!--                </figure>-->
-
-        <!--                <div class="card-content">-->
-
-        <!--                  <div class="card-rating">-->
-        <!--                    <ion-icon name="star"></ion-icon>-->
-        <!--                    <ion-icon name="star"></ion-icon>-->
-        <!--                    <ion-icon name="star"></ion-icon>-->
-        <!--                    <ion-icon name="star"></ion-icon>-->
-        <!--                    <ion-icon name="star"></ion-icon>-->
-        <!--                  </div>-->
-
-        <!--                  <p class="card-subtitle">-->
-        <!--                    <a href="#">Colombo</a>-->
-        <!--                  </p>-->
-
-        <!--                  <h3 class="h3 card-title">-->
-        <!--                    <a href="#">Lotus Tower</a>-->
-        <!--                  </h3>-->
-
-        <!--                  <p class="card-text">-->
-        <!--                    Lotus Tower, also referred to as Colombo Lotus Tower, is a 351.5 m tall tower, located in Colombo, Sri Lanka-->
-        <!--                  </p>-->
-
-        <!--                </div>-->
-
-        <!--              </div>-->
-        <!--            </li>-->
-
-        <!--            <li>-->
-        <!--              <div class="popular-card">-->
-
-        <!--                <figure class="card-img">-->
-        <!--                  <img src="./assets/images/gallefort.webp" alt="Galle Fort, dubai" loading="lazy">-->
-        <!--                </figure>-->
-
-        <!--                <div class="card-content">-->
-
-        <!--                  <div class="card-rating">-->
-        <!--                    <ion-icon name="star"></ion-icon>-->
-        <!--                    <ion-icon name="star"></ion-icon>-->
-        <!--                    <ion-icon name="star"></ion-icon>-->
-        <!--                    <ion-icon name="star"></ion-icon>-->
-        <!--                    <ion-icon name="star"></ion-icon>-->
-        <!--                  </div>-->
-
-        <!--                  <p class="card-subtitle">-->
-        <!--                    <a href="#">Galle</a>-->
-        <!--                  </p>-->
-
-        <!--                  <h3 class="h3 card-title">-->
-        <!--                    <a href="#">Galle Fort</a>-->
-        <!--                  </h3>-->
-
-        <!--                  <p class="card-text">-->
-        <!--                    Galle Fort, in the Bay of Galle on the southwest coast of Sri Lanka, was built first in 1588 by the Portuguese.-->
-        <!--                  </p>-->
-
-        <!--                </div>-->
-
-        <!--              </div>-->
-        <!--            </li>-->
-
-        <!--            <li>-->
-        <!--              <div class="popular-card">-->
-
-        <!--                <figure class="card-img">-->
-        <!--                  <img src="./assets/images/dalada.webp" alt="Temple Of The Tooth, japan" loading="lazy">-->
-        <!--                </figure>-->
-
-        <!--                <div class="card-content">-->
-
-        <!--                  <div class="card-rating">-->
-        <!--                    <ion-icon name="star"></ion-icon>-->
-        <!--                    <ion-icon name="star"></ion-icon>-->
-        <!--                    <ion-icon name="star"></ion-icon>-->
-        <!--                    <ion-icon name="star"></ion-icon>-->
-        <!--                    <ion-icon name="star"></ion-icon>-->
-        <!--                  </div>-->
-
-        <!--                  <p class="card-subtitle">-->
-        <!--                    <a href="#">Kandy</a>-->
-        <!--                  </p>-->
-
-        <!--                  <h3 class="h3 card-title">-->
-        <!--                    <a href="#">Temple Of The Tooth</a>-->
-        <!--                  </h3>-->
-
-        <!--                  <p class="card-text">-->
-        <!--                   Temple of the Sacred Tooth Relic, is a Buddhist temple in Kandy, Sri Lanka.-->
-        <!--                  </p>-->
-
-        <!--                </div>-->
-
-        <!--              </div>-->
-        <!--            </li>-->
-
-        <!--          </ul>-->
-
-        <!--          <button class="btn btn-primary">More destintion</button>-->
-
-        <!--        </div>-->
-        <!--      </section>-->
 
 
         <!--
@@ -421,26 +323,26 @@
 
                             <div class="card-price">
 
-                                <div class="wrapper">
+<!--                                <div class="wrapper">-->
 
-                                    <p class="reviews">(25 reviews)</p>
+<!--                                    <p class="reviews">(25 reviews)</p>-->
 
-                                    <div class="card-rating">
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                    </div>
+<!--                                    <div class="card-rating">-->
+<!--                                        <ion-icon name="star"></ion-icon>-->
+<!--                                        <ion-icon name="star"></ion-icon>-->
+<!--                                        <ion-icon name="star"></ion-icon>-->
+<!--                                        <ion-icon name="star"></ion-icon>-->
+<!--                                        <ion-icon name="star"></ion-icon>-->
+<!--                                    </div>-->
 
-                                </div>
+<!--                                </div>-->
 
                                 <p class="price">
                                     $750
                                     <span>/ per person</span>
                                 </p>
 
-                                <button class="btn btn-secondary">Book Now</button>
+<!--                                <button class="btn btn-secondary">Book Now</button>-->
 
                             </div>
 
@@ -601,7 +503,7 @@
 
                 </ul>
 
-                <button class="btn btn-primary">View All Packages</button>
+                <button class="btn btn-primary" onclick="scrollToContact()">View All Packages</button>
 
             </div>
         </section>
@@ -670,6 +572,7 @@
         <section class="cta" id="contact">
             <div class="container">
 
+
                 <div class="cta-content">
                     <p class="section-subtitle">Call To Action</p>
 
@@ -684,13 +587,13 @@
 <!--                <button class="btn btn-secondary">Contact Us !</button>-->
 
             </div>
-            <div  style="padding: 0 10%">
+            <div  style="padding: 0 16%">
 
 
                 <form action="" class="tour-search-form" id="tour-search-form">
                     <div class="input-wrapper">
                         <label for="name" class="input-label">Name*</label>
-                        <input type="text" name="name" id="name" required placeholder="Enter Name" class="input-field">
+                        <input type="text" name="name" id="name"  placeholder="Enter Name" class="input-field">
                     </div>
 
                     <div class="input-wrapper">
@@ -700,22 +603,22 @@
 
                     <div class="input-wrapper">
                         <label for="destination" class="input-label">Destination*</label>
-                        <input type="text" name="place" id="place" required placeholder="Enter Destination" class="input-field">
+                        <input type="text" name="place" id="place"  placeholder="Enter Destination" class="input-field">
                     </div>
 
                     <div class="input-wrapper">
                         <label for="people" class="input-label">Pax Number*</label>
-                        <input type="number" name="people" id="people" required placeholder="No. of People" class="input-field">
+                        <input type="number" name="people" id="people"  placeholder="No. of People" class="input-field">
                     </div>
 
                     <div class="input-wrapper">
                         <label for="checkin" class="input-label">Check-in Date*</label>
-                        <input type="date" name="checkin" id="checkin" required class="input-field">
+                        <input type="date" name="checkin" id="checkin"  class="input-field">
                     </div>
 
                     <div class="input-wrapper">
                         <label for="checkout" class="input-label">Check-out Date*</label>
-                        <input type="date" name="checkout" id="checkout" required class="input-field">
+                        <input type="date" name="checkout" id="checkout"  class="input-field">
                     </div>
 
                     <div class="button-row">
@@ -725,14 +628,6 @@
 
             </div>
         </section>
-
-        <!--
-          - #TOUR SEARCH
-        -->
-
-<!--              <section class="tour-search">-->
-<!--                -->
-<!--              </section>-->
 
     </article>
 </main>
@@ -847,6 +742,7 @@
 -->
 <script src="./assets/js/script.js"></script>
 <script src="./assets/js/places.js"></script>
+<script src="./assets/js/vehicles.js"></script>
 
 <!--
   - ionicon link

@@ -143,3 +143,13 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('tour-search-form').reset();
     });
 });
+
+//Auto scroll function
+function scrollToContact() {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+        contactSection.scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+}

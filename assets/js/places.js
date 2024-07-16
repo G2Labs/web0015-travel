@@ -51,13 +51,13 @@ document.addEventListener('DOMContentLoaded', function() {
           <img src="${destination.image}" alt="${destination.title}" loading="lazy">
         </figure>
         <div class="card-content">
-          <div class="card-rating">
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
-          </div>
+<!--          <div class="card-rating">-->
+<!--            <ion-icon name="star"></ion-icon>-->
+<!--            <ion-icon name="star"></ion-icon>-->
+<!--            <ion-icon name="star"></ion-icon>-->
+<!--            <ion-icon name="star"></ion-icon>-->
+<!--            <ion-icon name="star"></ion-icon>-->
+<!--          </div>-->
           <p class="card-subtitle">
             <a href="#">${destination.city}</a>
           </p>

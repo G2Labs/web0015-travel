@@ -106,6 +106,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 // Optionally, reset the form after submission
                 document.getElementById('tour-search-form').reset();
+
+                // Show SweetAlert success message
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Form Submitted Successfully!',
+                    text: 'Thank you for your inquiry.',
+                    timer: 3000,
+                    timerProgressBar: true,
+                    showConfirmButton: false
+                });
             })
 
             .catch(error => {
@@ -121,15 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
 
-        // Show SweetAlert success message
-        Swal.fire({
-            icon: 'success',
-            title: 'Form Submitted Successfully!',
-            text: 'Thank you for your inquiry.',
-            timer: 3000,
-            timerProgressBar: true,
-            showConfirmButton: false
-        });
+
 
         // Optionally, reset the form after submission
         document.getElementById('tour-search-form').reset();

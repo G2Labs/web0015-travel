@@ -48,6 +48,52 @@ window.addEventListener("scroll", function () {
 
 // Get the current year
 document.addEventListener('DOMContentLoaded', () => {
-  const currentYear = new Date().getFullYear();
-  document.getElementById('current-year').textContent = currentYear;
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+});
+
+
+//places
+document.addEventListener('DOMContentLoaded', function() {
+  const destinationList = document.getElementById('destination-list');
+
+  // Fetch data from JSON file
+  fetch('assets/js/destinations.json')
+      .then(response => response.json())
+      .then(data => {
+        // Loop through each destination item
+        data.forEach(destination => {
+          // Create elements for each destination card
+          const listItem = document.createElement('li');
+          listItem.innerHTML = `
+          <div class="popular-card">
+            <figure class="card-img">
+              <img src="${destination.image}" alt="${destination.title}" loading="lazy">
+            </figure>
+            <div class="card-content">
+              <div class="card-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="card-subtitle">
+                <a href="#">${destination.city}</a>
+              </p>
+              <h3 class="h3 card-title">
+                <a href="#">${destination.title}</a>
+              </h3>
+              <p class="card-text">
+                ${destination.description}
+              </p>
+            </div>
+          </div>
+        `;
+
+          // Append the created card to the destination list
+          console.log(listItem)
+          destinationList.appendChild(listItem);
+        });
+      })
+      .catch(error => console.error('Error fetching destinations:', error));
 });

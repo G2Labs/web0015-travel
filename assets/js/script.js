@@ -89,7 +89,8 @@ document.addEventListener('DOMContentLoaded', function() {
             body: JSON.stringify(formData),
             headers: {
                 'Content-Type': 'application/json'
-            }
+            },
+            redirect: "follow"
         })
             .then(response => response.json())
             .then(result => {

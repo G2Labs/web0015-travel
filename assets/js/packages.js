@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             "image": "./assets/images/sigiriya.jpg",  // Placeholder image path
             "title": "Explore Sigiriya",
-            "description": "Discover the ancient rock fortress of Sigiriya in a 3-day, 2-night trip, ideal for a group of 10.",
+            "description": "Discover the ancient rock fortress of Sigiriya in a 3-day, 2-night trip, ideal for a group of 8.",
             "duration": "3D/2N",
             "pax": 8,
             "location": "Sigiriya, Sri Lanka",

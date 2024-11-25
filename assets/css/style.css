@@ -247,7 +247,25 @@ body { background: var(--white); }
   padding: 6px;
   border-radius: 50%;
   color: var(--white);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.helpline-box .icon-row {
+  display: flex;
+  align-items: center; /* Align icons vertically */
+  gap: 10px; /* Space between icons */
+}
+
+/*.helpline-box .icon-box {*/
+/*  font-size: 24px; !* Adjust the icon size *!*/
+/*  color: #333; !* Change color if needed *!*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*}*/
 
 .helpline-box .icon-box ion-icon { --ionicon-stroke-width: 40px; }
 

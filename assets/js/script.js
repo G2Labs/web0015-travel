@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(formData);
 
         // Send form data to Google Apps Script
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyWl_9730ggWkdjqdqpnalnVREYdskFyStUZlTeJ55BdONpdisqEhvpqUhmn3nSaLg2/exec'; // Replace with your Google Apps Script URL
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwrXH-joOGNl3iv69gW7Ka3BC-3-sNSuShIDwB2pPX7qApI3898_XBljMBACDDxDshG/exec'; // Replace with your Google Apps Script URL
 
         fetch(scriptURL, {
             method: 'POST',

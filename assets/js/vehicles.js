@@ -4,15 +4,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Inline JSON data
     const data = [
         {
-            "image": "./assets/images/hiace.png",
+            "image": "https://res.cloudinary.com/dkznriytt/image/upload/v1737053359/hiace_p5xfrm.png",
             "title": "Hiace",
         },
         {
-            "image": "./assets/images/prius.png",
+            "image": "https://res.cloudinary.com/dkznriytt/image/upload/v1737053359/prius_jypiai.png",
             "title": "Prius",
         },
         {
-            "image": "./assets/images/coaster.png",
+            "image": "https://res.cloudinary.com/dkznriytt/image/upload/v1737054011/web0015-travel/gxboaqq1tljutn4xqyms.png",
             "title": "Coster",
         },
         // {

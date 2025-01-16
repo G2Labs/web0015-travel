@@ -4,37 +4,37 @@ document.addEventListener('DOMContentLoaded', function() {
     // Inline JSON data
     const data = [
         {
-            "image": "./assets/images/kitulgala.jpg",  // Placeholder image path
+            "image": "https://res.cloudinary.com/dkznriytt/image/upload/v1737053359/kitulgala_tzq7lj.jpg",  // Placeholder image path
             "city": "Kithulgala",
             "title": "Kithulgala",
             "description": "Kithulgala is a small town in the west of Sri Lanka, known for its lush greenery and as a location for white-water rafting."
         },
         {
-            "image": "./assets/images/yaala.jpg",  // Placeholder image path
+            "image": "https://res.cloudinary.com/dkznriytt/image/upload/v1737053360/yaala_m757nw.jpg",  // Placeholder image path
             "city": "Yaala",
             "title": "Yala National Park",
             "description": "Yala National Park is the most visited and second largest national park in Sri Lanka, known for its wildlife and variety of ecosystems."
         },
         {
-            "image": "./assets/images/udawalawa.jpg",  // Placeholder image path
+            "image": "https://res.cloudinary.com/dkznriytt/image/upload/v1737053361/udawalawa_nipb1b.jpg",  // Placeholder image path
             "city": "Udawalawa",
             "title": "Udawalawe National Park",
             "description": " Udawalawe National Park, is one of the best places in the world to see wild elephants."
         },
         {
-            "image": "./assets/images/wilpaththu.jpg",  // Placeholder image path
+            "image": "https://res.cloudinary.com/dkznriytt/image/upload/v1737053363/wilpaththu_o7q6ml.jpg",  // Placeholder image path
             "city": "Wilpaththu",
             "title": "Wilpattu National Park",
             "description": "Wilpattu is world-renowned for its leopard (Panthera pardus kotiya) population"
         },
         {
-            "image": "./assets/images/trinco.jpg",  // Placeholder image path
+            "image": "https://res.cloudinary.com/dkznriytt/image/upload/v1737053361/trinco_f48iw4.jpg",  // Placeholder image path
             "city": "Trincomalee",
             "title": "Trincomalee",
             "description": "Trincomalee is a port city on the northeast coast of Sri Lanka, famous for its beautiful beaches and historical significance."
         },
         {
-            "image": "./assets/images/minneriya.jpg",  // Placeholder image path
+            "image": "https://res.cloudinary.com/dkznriytt/image/upload/v1737053360/minneriya_cvkty2.jpg",  // Placeholder image path
             "city": "Minneriya",
             "title": "Minneriya National Park",
             "description": "Minneriya National Park is home to the world's largest known gathering of Asian elephants."

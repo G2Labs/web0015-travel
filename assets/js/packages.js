@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Inline JSON data for packages
     const packages = [
         {
-            "image": "./assets/images/galle.jpeg",  // Placeholder image path
+            "image": "https://res.cloudinary.com/dkznriytt/image/upload/v1737053361/galle_zl9h8k.jpg",  // Placeholder image path
             "title": "Down South Sri Lanka - Galle",
             "description": "Experience the beauty of Galle with a 7-day, 6-night adventure. Perfect for a group of 10.",
             "duration": "7D/6N",
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "price": "$"+93 * 7  // $93 per day
         },
         {
-            "image": "./assets/images/sigiriya.jpg",  // Placeholder image path
+            "image": "https://res.cloudinary.com/dkznriytt/image/upload/v1737053360/sigiriya_fid0aj.jpg",  // Placeholder image path
             "title": "Explore Sigiriya",
             "description": "Discover the ancient rock fortress of Sigiriya in a 3-day, 2-night trip, ideal for a group of 8.",
             "duration": "3D/2N",
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "price": "$"+93 * 3  // $93 per day
         },
         {
-            "image": "./assets/images/all-island.png",  // Placeholder image path
+            "image": "https://res.cloudinary.com/dkznriytt/image/upload/v1737053361/all-island_vlyqfl.png",  // Placeholder image path
             "title": "Full Island Tour",
             "description": "Embark on a comprehensive tour around the entire island of Sri Lanka. Duration and price are negotiable.",
             "duration": "Flexible",
